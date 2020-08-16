@@ -63,6 +63,7 @@ h3 {
 .page-header .nav-link:hover,
 .page-header .nav-link:focus {
   color: var(--accent-color);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .container {
   width: 1200px;
@@ -88,7 +89,6 @@ h3 {
   line-height: 1.19;
   text-decoration: none;
   color: var(--dark-color);
-  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .web {
@@ -120,7 +120,9 @@ h3 {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   text-decoration: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 /* подчеркивание */
 .menu-nav {
   display: flex;
@@ -218,7 +220,7 @@ h3 {
 .contact-link {
   color: #757575;
   fill: #757575;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-link:focus,
