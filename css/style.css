@@ -52,6 +52,7 @@ h3 {
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .page-header {
@@ -155,7 +156,7 @@ h3 {
 
 .menu-nav .current::after {
   position: absolute;
-  content: '';
+  content: "";
   bottom: -1px;
   left: 0;
   width: 100%;
@@ -237,13 +238,9 @@ h3 {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color:#C4C4C4;
+  background-color: #c4c4c4;
 
-  background-image: linear-gradient(
-      rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)
-    ),
-    url('../images/Hero-optmz.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("../images/Hero-optmz.jpg");
 
   background-repeat: no-repeat;
   background-position: center;
@@ -320,7 +317,7 @@ h3 {
 }
 
 .container {
-  display: flex;
+  /* display: flex; */
   flex-wrap: wrap;
 }
 
@@ -336,7 +333,7 @@ h3 {
 /* иконки в преимуществах */
 .feature-list .item::before {
   display: block;
-  content: '';
+  content: "";
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
@@ -423,7 +420,7 @@ h3 {
 
 .work-list .item::after {
   position: absolute;
-  content: '';
+  content: "";
 
   bottom: 0;
   left: 0;
@@ -506,8 +503,7 @@ h3 {
   height: 422px;
   width: calc((100% - 90px) / 4);
   margin-right: 30px;
-  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 1px 3px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
 }
 .team-menu .team-member:last-child {
@@ -531,7 +527,6 @@ h3 {
   color: #afb1b8;
   text-decoration: none;
   text-align: center;
-  
 }
 
 .social-item:not(:last-child) {
@@ -549,8 +544,7 @@ h3 {
   width: 44px;
   height: 44px;
   color: var(--icon-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -572,14 +566,19 @@ h3 {
 /* clients */
 /* Постоянные клиенты */
 
-.clients .list {
-  display: flex;
-  }
-
 .clients .item {
-  display: flex;
+  display: block;
   margin-right: 30px;
 }
+
+.clients .list {
+  display: flex;
+}
+
+/* .clients .item {
+  display: flex;
+  margin-right: 30px;
+} */
 
 .client-link {
   display: flex;
@@ -590,18 +589,17 @@ h3 {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   color: var(--icon-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
 .client-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
-  
 }
 
 .client-link-logo {
+  display: block;
   fill: currentColor;
 }
 .clients-item:not(:last-child) {
@@ -638,16 +636,14 @@ h3 {
   color: var(--title-text-color);
   background: #f5f4fa;
   border: 1px solid transparent;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
 .btn:focus {
   background: var(--accent-color);
   color: var(--white-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 a {
@@ -669,8 +665,7 @@ a {
 }
 
 .container-element:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .container-element:nth-child(3n + 0) {
@@ -858,8 +853,7 @@ a {
   border-radius: 50%;
   color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -898,8 +892,7 @@ a {
   transform: translate(-50%, -50%) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .btn-close {
