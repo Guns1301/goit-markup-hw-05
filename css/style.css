@@ -531,6 +531,7 @@ h3 {
   color: #afb1b8;
   text-decoration: none;
   text-align: center;
+  
 }
 
 .social-item:not(:last-child) {
@@ -548,6 +549,8 @@ h3 {
   width: 44px;
   height: 44px;
   color: var(--icon-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .social-icon {
@@ -587,12 +590,15 @@ h3 {
   border-radius: 4px;
   border: 1px solid #afb1b8;
   color: var(--icon-color);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .client-link:hover,
 .client-link:focus {
   color: var(--accent-color);
   border-color: var(--accent-color);
+  
 }
 
 .client-link-logo {
@@ -632,6 +638,8 @@ h3 {
   color: var(--title-text-color);
   background: #f5f4fa;
   border: 1px solid transparent;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn:hover,
@@ -808,6 +816,7 @@ a {
 
 .padding-zero {
   padding-left: 0;
+  margin-top: 0px;
 }
 
 .contacts-item {
@@ -849,6 +858,8 @@ a {
   border-radius: 50%;
   color: var(--white-color);
   background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-link:hover,
 .footer-link:focus {
@@ -877,7 +888,6 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
   min-width: 528px;
   min-height: 581px;
   /* width: 528px;
@@ -885,9 +895,11 @@ a {
   background-color: var(--white-color);
   border-radius: 4px;
 
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  
 }
 
 .btn-close {
@@ -911,5 +923,5 @@ a {
   visibility: hidden;
   pointer-events: none;
   opacity: 0;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scale(1.2);
 }
